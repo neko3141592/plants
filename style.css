@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 0 0 20vh 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40vh 0;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.hero h1 {
+  font-size: 5vh;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 2vh;
+}
+
+#about p {
+  font-size: 20px;
+  color: #666;
+}
+
+.plant-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.plant {
+  text-align: center;
+}
+
+.plant img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.plant h3 {
+  margin: 10px 0;
+}
+
+.plant p {
+  font-size: 14px;
+  color: #888;
+}
+
+.achievement-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.achievement {
+  text-align: center;
+}
+
+.achievement img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.achievement h3 {
+  margin: 10px 0;
+}
+
+.achievement p {
+  font-size: 14px;
+  color: #888;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 750px) {
+	#contact-form {
+    display: block;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .form-group {
+    padding: 10px 0;
+  }
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

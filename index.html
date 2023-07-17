@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>海城中高生物部植物班</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lightbox.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header id="head">
+    <nav>
+      <ul>
+        <li><a href="#home">ホーム</a></li>
+        <li><a href="#about">概要</a></li>
+        <li><a href="#plants">植物一覧</a></li>
+        <li><a href="#achievement">実績</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h1>海城中高生物部植物班</h1>
+      <p>植物の世界へようこそ！</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>この班について</h2>
+      <p>海城中高生物部植物班では、植物の生態などを各々が研究し、また、ほぼ自由に育てたい植物を育てることができる環境が整っています。ぜひ、入部後、入班してください！</p>
+    </div>
+  </section>
+
+  <section id="plants">
+    <div class="container">
+      <h2>植物一覧</h2>
+      <div class="plant-list">
+        <div class="plant">
+          <a href="plant1.jpg" data-lightbox="plants" data-title="植物名1">
+            <img src="plant1.jpg" alt="植物1">
+          </a>
+          <h3>植物名1</h3>
+          <p>植物1に関する説明文が入ります。</p>
+        </div>
+        <div class="plant">
+          <a href="plant2.jpg" data-lightbox="plants" data-title="植物名2">
+            <img src="plant2.jpg" alt="植物2">
+          </a>
+          <h3>植物名2</h3>
+          <p>植物2に関する説明文が入ります。</p>
+        </div>
+        <div class="plant">
+          <a href="plant3.jpg" data-lightbox="plants" data-title="植物名3">
+            <img src="plant3.jpg" alt="植物3">
+          </a>
+          <h3>植物名3</h3>
+          <p>植物3に関する説明文が入ります。</p>
+        </div>
+        <div class="plant">
+          <a href="plant4.jpg" data-lightbox="plants" data-title="植物名4">
+            <img src="plant4.jpg" alt="植物4">
+          </a>
+          <h3>植物名4</h3>
+          <p>植物4に関する説明文が入ります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievement">
+    <div class="container">
+      <h2>実績</h2>
+      <div class="achievement-list">
+        <div class="achievement">
+          <a href="achievement1.png" data-lightbox="achievements" data-title="学会・研究タイトル1">
+            <img src="achievement1.png" alt="実績1">
+          </a>
+          <h3>学会・研究タイトル1</h3>
+          <p>学会1に関する説明文が入ります。</p>
+        </div>
+        <div class="achievement">
+          <a href="achievement2.png" data-lightbox="achievements" data-title="学会・研究タイトル2">
+            <img src="achievement2.png" alt="実績2">
+          </a>
+          <h3>学会・研究タイトル2</h3>
+          <p>学会2に関する説明文が入ります。</p>
+        </div>
+        <div class="achievement">
+          <a href="achievement3.png" data-lightbox="achievements" data-title="学会・研究タイトル3">
+            <img src="achievement3.png" alt="実績3">
+          </a>
+          <h3>学会・研究タイトル3</h3>
+          <p>学会3に関する説明文が入ります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>お問い合わせ</h2>
+      <form id="contact-form" action="process.php" method="post">
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">送信</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 海城中高生物部植物班. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./scripts/lightbox.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/send.js"></script>
+</body>
+
+</html>
