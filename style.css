@@ -140,7 +140,7 @@ section {
   border: 1px solid #ccc;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width : 831px ){
 	#contact-form {
     display: block;
   }
